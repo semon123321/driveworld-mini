@@ -1,0 +1,33 @@
+{
+  "dataset": "nuScenes v1.0-mini annotations",
+  "history": 3,
+  "horizon": 4,
+  "grid_size": 64,
+  "resolution_m": 0.5,
+  "sampling_hz": 2,
+  "channels": [
+    "vehicle",
+    "vulnerable_road_user"
+  ],
+  "split_scenes": {
+    "train": [
+      "scene-0061",
+      "scene-0103",
+      "scene-0553",
+      "scene-0655",
+      "scene-0757",
+      "scene-0796",
+      "scene-0916",
+      "scene-1077"
+    ],
+    "val": [
+      "scene-1094",
+      "scene-1100"
+    ]
+  },
+  "windows": {
+    "train": 248,
+    "val": 68
+  },
+  "action_definition": "Future ego delta x/y/yaw in previous ego frame; oracle at offline evaluation"
+}

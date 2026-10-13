@@ -1,0 +1,56 @@
+{
+  "dataset": "nuScenes v1.0-mini annotations",
+  "split_scenes": [
+    "scene-1094",
+    "scene-1100"
+  ],
+  "windows": 68,
+  "history_steps": 3,
+  "future_steps": 4,
+  "notes": "Ground-truth future ego motion is an oracle conditioning signal; this is offline prediction, not policy evaluation.",
+  "model_thresholds_calibrated_on_train": [
+    0.6499999761581421,
+    0.30000001192092896
+  ],
+  "methods": {
+    "model": {
+      "iou_by_horizon": [
+        0.4986101926685288,
+        0.3709910473675343,
+        0.3209637434943633,
+        0.28475887358131147
+      ],
+      "mean_iou": 0.3688309642779345,
+      "global_iou_by_channel": {
+        "vehicle": 0.37460985834856964,
+        "vulnerable_road_user": 0.3645213628988643
+      }
+    },
+    "static_world": {
+      "iou_by_horizon": [
+        0.5033866532405588,
+        0.3730562560340718,
+        0.32109321277056346,
+        0.2874573685681988
+      ],
+      "mean_iou": 0.3712483726533482,
+      "global_iou_by_channel": {
+        "vehicle": 0.3744417789260011,
+        "vulnerable_road_user": 0.3663711525052296
+      }
+    },
+    "persistence": {
+      "iou_by_horizon": [
+        0.28907972214846,
+        0.22195795835988028,
+        0.1868359887142988,
+        0.18070916733624903
+      ],
+      "mean_iou": 0.21964570913972203,
+      "global_iou_by_channel": {
+        "vehicle": 0.2123900325665699,
+        "vulnerable_road_user": 0.22491554054054055
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driveworld-mini"
+version = "0.1.0"
+description = "Action-conditioned BEV occupancy rollout baseline on nuScenes mini"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "Pillow>=10,<12", "torch>=2.5,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+driveworld = "driveworld.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
